@@ -29,6 +29,11 @@ img {
     display: block;
 }
 
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -150,7 +155,7 @@ img {
 }
 
 .features-list-item {
-    flex-basis: calc((100% - 3 * 24px) / 4)
+    width: calc((100% - 72px) / 4);
 }
 
 .features-title {
