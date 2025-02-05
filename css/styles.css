@@ -87,12 +87,9 @@ img {
     color: #434455;
 }
 
-.header-address {
+.address-list {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
 }
 
 
@@ -150,11 +147,10 @@ img {
     display: flex;
     gap: 24px;
     justify-content: center;
-    align-items: center;
 }
 
 .features-list-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 .features-title {
@@ -227,7 +223,7 @@ img {
 }
 
 .portfolio {
-    padding-bottom: 120px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
