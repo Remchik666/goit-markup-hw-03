@@ -13,6 +13,8 @@ a {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,11 +31,6 @@ img {
     display: block;
 }
 
-ul, ol {
-    margin: 0;
-    padding-left: 0;
-}
-
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -42,7 +39,6 @@ ul, ol {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    height: 72px;
 }
 
 .header-container {
@@ -54,6 +50,11 @@ ul, ol {
 .header-nav {
     display: flex;
     align-items: center;
+}
+
+.header-nav .logo {
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .logo {
@@ -73,13 +74,12 @@ ul, ol {
 
 .nav-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    align-items: center;
     gap: 40px;
 }
 
 .nav-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -89,12 +89,30 @@ ul, ol {
 }
 
 .address-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
+}
+
+.header-address {
+    font-style: normal;
+    margin-left: auto;
 }
 
 .address-list {
     display: flex;
     gap: 40px;
+}
+
+.nav-link:hover, 
+.nav-link:focus,
+.address-link:hover,
+.address0link:focus {
+    color: #404bbf;
 }
 
 
@@ -111,6 +129,8 @@ ul, ol {
     color: #fff;
     max-width: 496px;
     margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .solutions-bnt {
@@ -128,6 +148,7 @@ ul, ol {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .features {
